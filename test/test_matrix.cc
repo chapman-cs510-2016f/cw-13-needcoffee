@@ -1,5 +1,5 @@
 #include <iostream>
-#include "matrix.h"
+#include "../src/matrix/matrix.h"
 
 int main() {
     // Define two 10x10 matrices with element types of long double
