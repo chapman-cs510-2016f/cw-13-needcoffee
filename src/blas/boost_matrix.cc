@@ -33,7 +33,7 @@ int main(int argc, char **argv)
   cout << endl << "n:" << endl;
   cout << n << endl;
   cout << endl << "o:" << endl;
-  cout << n << endl;
+  cout << o << endl;
   cout << endl << "m + n:" << endl;
   cout << m + n << endl;
   cout << endl << "m * n:" << endl;
