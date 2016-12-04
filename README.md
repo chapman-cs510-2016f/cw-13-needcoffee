@@ -1,8 +1,8 @@
 # CS510 CW 13
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** _Alexis Ford and Afnan Alqahtani_
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-13-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-13-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-13-needcoffee.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-13-needcoffee)
 
 **Due date:** 2016/12/06
 
@@ -48,4 +48,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Alexis Ford and Afnan Alqahtani**
