@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "../src/matrix/matrix.h"
 
 int main() {
@@ -16,12 +17,28 @@ int main() {
     Matrix<long double> mat3 = mat1 + mat2;
   
     // Print out the third matrix as a text array
-    for (int i=0; i<mat3.get_rows(); i++) {
-        for (int j=0; j<mat3.get_cols(); j++) {
-            std::cout << mat3(i,j) << "\t";
-        }
-        std::cout << std::endl;
-    }
-  
+    mat3.print();
+
+    Matrix<long double> mat4(2, 3, 1);
+    mat4(0,1) = 2.0;
+    mat4(0,2) = 3.0;
+    mat4(1,0) = 4.0;
+    mat4(1,1) = 5.0;
+    mat4(1,2) = 6.0;
+    std::cout << "Original matrix: " << std::endl;
+    mat4.print();
+    Matrix<long double> mat5(3, 2, 0);
+    mat5 = mat4.transpose();
+    std::cout << "Transposed matrix" << std::endl;
+    mat5.print();
+    std::cout << "Multiplying original and transposed matrices:" << std::endl;
+    Matrix<long double> matProd = mat4*mat5;
+    matProd.print();
+    std::cout << "Adding -10.0 to every element of matrix product:" << std::endl;
+    matProd = matProd + -10.0;
+    matProd.print();
+
+    std::cout << "Saving new matrix to file called 'matrix.txt'." << std::endl;
+    matProd.save("matrix.txt");    
     return 0;
 }
